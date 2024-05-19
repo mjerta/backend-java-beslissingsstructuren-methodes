@@ -213,6 +213,8 @@ public class Loops {
     // The (howbig + 1) is being devided by 2 when you are dealing with uneven numbers so
     // everytime you end up with the correct number of spaces.
 
+    //Integers are being rounded down automatically so when a 8 becomes a 9 devided by 2 is still 4
+
     int spaces = (howBig + 1) / 2;
 
     for (int i = 1; i <= howBig; i += 2) {
