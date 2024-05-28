@@ -1,20 +1,14 @@
 public class Main {
   public static void main(String[] args) {
-    // 1
-    hello();
-
-    // 2 & 3
     int number = 6;
-    positiveOrNegative(number);
-    postiveOrZeroOrNegativ(number); // Dit is tevens ook Opdracht 4: Positief/Negatief/Zero Checker vanuit de bonus opdrachten IF ELSE
-
-    // 4
-    String name = "Henk";
-    bartender(name);
-
-    // 5
     int input1 = 4;
     int input2 = 20;
+    hello();
+
+    positiveOrNegative(number);
+    postiveOrZeroOrNegativ(number); // Dit is tevens ook Opdracht 4: Positief/Negatief/Zero Checker vanuit de bonus opdrachten IF ELSE
+    String name = "Henk";
+    bartender(name);
     sum(input1, input2);
   }
 
@@ -41,16 +35,16 @@ public class Main {
     }
   }
 
-  public static void bartender(String drink) {
-    switch (drink) {
+  public static void bartender(String name) {
+    switch (name) {
       case "Henk":
-        System.out.println("Here is the Cola for " + drink);
+        System.out.println("Here is the Cola for " + name);
         break;
       case "Maarten":
-        System.out.println("Here is the Fanta for " + drink);
+        System.out.println("Here is the Fanta for " + name);
         break;
       case "Hans":
-        System.out.println("Here is the Vodka for " + drink);
+        System.out.println("Here is the Vodka for " + name);
         break;
       default:
         System.out.println("The bartender did not whos drink it is");
